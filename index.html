@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ma. Izabelle — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=DM+Mono:ital,wght@0,300;0,400;1,300&family=Outfit:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- Canvas for particle bg -->
+<canvas id="bgCanvas"></canvas>
+
+<!-- Navigation -->
+<nav class="nav" id="nav">
+  <div class="nav-logo">izabelle<span>.</span></div>
+  <ul class="nav-links">
+    <li><a href="#home"><span>00</span>Home</a></li>
+    <li><a href="#about"><span>01</span>About</a></li>
+    <li><a href="#experience"><span>02</span>Experience</a></li>
+    <li><a href="#projects"><span>03</span>Projects</a></li>
+    <li><a href="#achievement"><span>04</span>Conference</a></li>
+    <li><a href="#certifications"><span>05</span>Certs</a></li>
+    <li><a href="#contact"><span>06</span>Contact</a></li>
+  </ul>
+</nav>
+
+<!-- Hero -->
+<section class="hero" id="home">
+  <div class="hero-bg-orbs">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    <div class="orb orb-4"></div>
+  </div>
+
+  <div class="hero-container">
+    <div class="hero-eyebrow">
+      <div class="eyebrow-line"></div>
+      <span class="mono-tag"> Hi! I am</span>
+      <div class="eyebrow-line"></div>
+    </div>
+
+    <div class="hero-name-wrapper">
+      <div class="hero-name-row">
+        <span class="hero-char" style="--i:0">M</span>
+        <span class="hero-char" style="--i:1">a</span>
+        <span class="hero-char hero-dot" style="--i:2">.</span>
+      </div>
+      <div class="hero-name-row hero-name-row-2">
+        <span class="hero-char" style="--i:3">I</span>
+        <span class="hero-char" style="--i:4">z</span>
+        <span class="hero-char" style="--i:5">a</span>
+        <span class="hero-char" style="--i:6">b</span>
+        <span class="hero-char" style="--i:7">e</span>
+        <span class="hero-char" style="--i:8">l</span>
+        <span class="hero-char" style="--i:9">l</span>
+        <span class="hero-char" style="--i:10">e</span>
+      </div>
+    </div>
+
+    <div class="hero-tagline">
+      <span class="tagline-static">I build things for the</span>
+      <div class="tagline-rotate">
+        <span>web.</span>
+        <span>future.</span>
+        <span>people.</span>
+        <span>web.</span>
+      </div>
+    </div>
+
+    <div class="hero-pills">
+      <div class="pill">Frontend</div>
+      <div class="pill pill-outline">UI/UX</div>
+      <div class="pill">Cybersecurity</div>
+      <div class="pill pill-outline">CS Student</div>
+    </div>
+
+    <a href="#about" class="hero-scroll-cta">
+      <span>Scroll to explore</span>
+      <div class="scroll-arrow">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <path d="M8 3v10M3 9l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+    </a>
+  </div>
+
+  <!-- Decorative floating text -->
+  <div class="hero-deco-text hero-deco-1">&lt;code /&gt;</div>
+  <div class="hero-deco-text hero-deco-2">design_meets_dev</div>
+  <div class="hero-deco-text hero-deco-3">∞</div>
+</section>
+
+<!-- About -->
+<section class="section about" id="about">
+  <div class="about-inner">
+    <div class="about-left">
+      <div class="section-number">01</div>
+      <h2 class="reveal-title">About<br><em>me</em></h2>
+      <div class="about-photo-wrap">
+        <div class="photo-ring"></div>
+        <img src="assets/profile.jpg" alt="Ma. Izabelle" class="about-photo" />
+        <div class="photo-badge">
+          <span>Oja, Ma. Izabelle</span>
+        </div>
+      </div>
+    </div>
+    <div class="about-right">
+      <p class="about-lead">A 3rd-year Computer Science student at PUP driven by the intersection of <em>design and code</em>.</p>
+      <div class="about-body">
+        <p>I thrive where aesthetics meet logic — building beautiful, functional, and user-centered digital experiences that feel as good as they work.</p>
+        <p>Currently focused on web development while exploring modern frameworks and backend fundamentals. I have a strong pull toward front-end development, UI/UX, and a growing curiosity in cybersecurity.</p>
+        <p>My goal: become a well-rounded developer who builds secure, efficient, and genuinely delightful systems.</p>
+      </div>
+      <div class="about-stats">
+        <div class="stat">
+          <span class="stat-num counter" data-target="3">0</span>
+          <span class="stat-label">Years in CS</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num counter" data-target="5">0</span>
+          <span class="stat-label">Orgs Joined</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num counter" data-target="4">0</span>
+          <span class="stat-label">Projects Built</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num counter" data-target="1">0</span>
+          <span class="stat-label">Intl. Conference</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Experience -->
+<section class="section experience" id="experience">
+  <div class="experience-inner">
+    <div class="experience-header">
+      <div class="section-number">02</div>
+      <h2 class="reveal-title">Where I've<br><em>Worked.</em></h2>
+    </div>
+    <div class="timeline">
+      <div class="tl-item" data-delay="0">
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <div class="tl-date">Dec 2024 — June 2025</div>
+          <h3>Technology Dept. Cadet · Cybersecurity</h3>
+          <p>Cisco NetConnect PUP - Manila</p>
+        </div>
+      </div>
+      <div class="tl-item" data-delay="1">
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <div class="tl-date">Nov 2024 — June 2025</div>
+          <h3>Senior Council Officer, SWP Committee</h3>
+          <p>PUP CCIS Student Council</p>
+        </div>
+      </div>
+      <div class="tl-item" data-delay="2">
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <div class="tl-date">Oct 2024 — June 2025</div>
+          <h3>Member</h3>
+          <p>Junior Blockchain Education Consortium of the Philippines</p>
+        </div>
+      </div>
+      <div class="tl-item" data-delay="3">
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <div class="tl-date">Oct 2024 — June 2025</div>
+          <h3>Member</h3>
+          <p>AWS Cloud Club PUP</p>
+        </div>
+      </div>
+      <div class="tl-item" data-delay="4">
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <div class="tl-date">Nov 2023 — Jul 2024</div>
+          <h3>Junior Council Officer, STRAW Committee</h3>
+          <p>PUP CCIS Student Council</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Projects -->
+<section class="section projects" id="projects">
+  <div class="projects-inner">
+    <div class="section-number">03</div>
+    <h2 class="reveal-title">Selected<em> Projects</em></h2>
+
+    <div class="projects-carousel">
+      <!-- Left Navigation Button -->
+      <button class="carousel-nav carousel-prev" id="projPrev">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+      </button>
+
+      <!-- Carousel Container -->
+      <div class="carousel-main">
+        <div class="carousel-track" id="projTrack">
+          <!-- Project 1 -->
+          <div class="carousel-slide" data-index="0">
+            <div class="slide-preview">
+              <img src="assets/iskonnect-logo.png" alt="ISKOnnect" />
+            </div>
+            <div class="slide-content">
+              <div class="proj-tag">Desktop App</div>
+              <h3>ISKOnnect</h3>
+              <p>A desktop application for PUP students to share study materials with a gamified reward system and smart filtering by college and course.</p>
+              <div class="proj-tech">
+                <span>Java</span><span>JavaFX</span><span>Maven</span><span>Supabase</span>
+              </div>
+              <a href="https://github.com/JpCurada/iskonnect.git" target="_blank" class="proj-link">View on GitHub →</a>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="carousel-slide" data-index="1">
+            <div class="slide-preview">
+              <img src="assets/erehistro-logo.png" alt="eRehistroPH" />
+            </div>
+            <div class="slide-content">
+              <div class="proj-tag">Web App</div>
+              <h3>eRehistroPH</h3>
+              <p>An online civil registration system streamlining document requests and appointments for Philippine government services.</p>
+              <div class="proj-tech">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </div>
+              <a href="https://e-rehistroph.vercel.app/?fbclid=IwY2xjawRHGBxleHRuA2FlbQIxMQBzcnRjBmFwcF9pZAEwAAEeDlNs7wCVpavEgOmIXrhbLHFYAY0eL3bzZrfK1wG-hodw7RUnJj-Z08plwhQ_aem_NWeQRXjQPdzOSdeaCauljA" class="proj-link">View Project →</a>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="carousel-slide" data-index="2">
+            <div class="slide-preview">
+              <img src="assets/bantay-logo.svg" alt="BANTAY" />
+            </div>
+            <div class="slide-content">
+              <div class="proj-tag">Algorithm · Conference</div>
+              <h3>Project BANTAY</h3>
+              <p>Disaster response routing system applying BFS and Dijkstra's Algorithm. Presented at WCTP 2025 in Hokkaido, Japan.</p>
+              <div class="proj-tech">
+                <span>Python</span><span>BFS</span><span>Dijkstra</span>
+              </div>
+              <a href="https://bantay-pmt.org/?fbclid=IwY2xjawRHFi1leHRuA2FlbQIxMQBzcnRjBmFwcF9pZAEwAAEep8TkT9nFU_5ZDuq8FBj69fbq_whu-ZWXHgwTysqITs8aa3hkh8N0s56XY9Y_aem_AWelwBnbYx3BoSSFiaVhaA" class="proj-link">View Project →</a>
+            </div>
+          </div>
+
+          <!-- Project 4 -->
+          <div class="carousel-slide" data-index="3">
+            <div class="slide-preview">
+              <img src="assets/businna-logo.png" alt="Bus In Na" />
+            </div>
+            <div class="slide-content">
+              <div class="proj-tag">Mobile App</div>
+              <h3>Bus In Na</h3>
+              <p>A mobile-first inter-provincial bus booking app for the Philippines. Enables commuters to search routes, select seats, and receive digital tickets with a secure, efficient e-ticketing solution.</p>
+              <div class="proj-tech">
+                <span>.NET MAUI</span><span>C#</span><span>ASP.NET Core</span>
+              </div>
+              <a href="https://github.com/cjreandino/Bus-In-Na.git" target="_blank" class="proj-link">View on GitHub →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Indicator Dots -->
+        <div class="carousel-indicators">
+          <button class="indicator active" data-index="0"></button>
+          <button class="indicator" data-index="1"></button>
+          <button class="indicator" data-index="2"></button>
+          <button class="indicator" data-index="3"></button>
+        </div>
+      </div>
+
+      <!-- Right Navigation Button -->
+      <button class="carousel-nav carousel-next" id="projNext">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="9 18 15 12 9 6"></polyline>
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- Achievement Highlight -->
+<section class="achievement-hero" id="achievement">
+  <div class="ach-bg-text">WCTP 2025</div>
+  <div class="ach-inner">
+    <div class="ach-label">🏆 International Achievement</div>
+    <h2>Presented at <em>WCTP 2025</em><br>Hokkaido, Japan</h2>
+    <p>Developed as part of our Design and Analysis of Algorithms course, <strong>PROJECT BANTAY</strong> applies <strong>BFS and Dijkstra's Algorithm</strong>  to support efficient and community-accessible disaster response routing.</p>
+    <div class="ach-meta">
+      <div class="ach-meta-item"><span>Conference</span>Workshop on Computation: Theory and Practice 2025</div>
+      <div class="ach-meta-item"><span>Institution</span>Chitose Inst. of Science and Technology</div>
+      <div class="ach-meta-item"><span>Date</span>Dec 1–3, 2025</div>
+      <div class="ach-meta-item"><span>Location</span>Chitose-city, Hokkaido, Japan</div>
+    </div>
+  </div>
+</section>
+
+<!-- Certifications -->
+<section class="section certifications" id="certifications">
+  <div class="certs-inner">
+    <div class="section-number">04</div>
+    <h2 class="reveal-title">Certifications<em> &amp; Credentials.</em></h2>
+    <div class="certs-grid">
+      <div class="cert-card">
+        <div class="cert-glow"></div>
+        <div class="cert-img">
+          <img src="assets/cisco-cybersecurity.png" alt="Cisco" />
+        </div>
+        <div class="cert-body">
+          <div class="cert-issuer">CISCO</div>
+          <h3>Introduction to Cybersecurity</h3>
+          <p>Completed with knowledge of cyber threats, vulnerabilities, threat detection, and defense mechanisms.</p>
+        </div>
+      </div>
+      <div class="cert-card">
+        <div class="cert-glow"></div>
+        <div class="cert-img">
+          <img src="assets/fortinet-threat-landscape.png" alt="Fortinet" />
+        </div>
+        <div class="cert-body">
+          <div class="cert-issuer">FORTINET</div>
+          <h3>Threat Landscape 3.0</h3>
+          <p>Fundamental understanding of the cyber threat landscape including threat actors and security principles.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Tech Stack -->
+<section class="section techstack" id="languages">
+  <div class="tech-inner">
+    <h2 class="tech-title">Tech<br>Stack<span>.</span></h2>
+    <div class="tech-marquee-wrap">
+      <div class="tech-marquee">
+        <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java"/><span>Java</span></div>
+        <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C"/><span>C</span></div>
+        <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#"/><span>C#</span></div>
+        <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML"/><span>HTML</span></div>
+        <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS"/><span>CSS</span></div>
+        <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"/><span>JavaScript</span></div>
+        <!-- Duplicated for seamless loop -->
+        <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java"/><span>Java</span></div>
+        <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C"/><span>C</span></div>
+        <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#"/><span>C#</span></div>
+        <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML"/><span>HTML</span></div>
+        <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS"/><span>CSS</span></div>
+        <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"/><span>JavaScript</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section class="section contact" id="contact">
+  <div class="contact-inner">
+    <div class="section-number light">05</div>
+    <div class="contact-top">
+      <p class="contact-pretext">What's Next?</p>
+      <h2 class="contact-big reveal-title-light">Let's<br><em>Connect!</em></h2>
+      <p class="contact-desc">I'm currently looking for new opportunities and collaborations. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+      <a href="mailto:maizabelleloja@iskolarngbayan.pup.edu.ph" class="contact-cta">
+        <span>Say Hello</span>
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10h12M10 4l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+
+    <div class="contact-socials">
+      <a href="https://github.com/lavieestbelle14" target="_blank" class="social-pill">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        GitHub
+      </a>
+      <a href="https://www.linkedin.com/in/izabelleoja/" target="_blank" class="social-pill">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.475-2.236-1.986-2.236-1.081 0-1.722.731-2.004 1.431-.103.25-.129.599-.129.948v5.426h-3.554s.05-8.8 0-9.714h3.554v1.375c.427-.66 1.19-1.599 2.898-1.599 2.116 0 3.704 1.383 3.704 4.36v5.578zM5.337 8.855c-1.144 0-1.915-.759-1.915-1.71 0-.953.771-1.71 1.96-1.71 1.188 0 1.914.757 1.94 1.71 0 .951-.752 1.71-1.985 1.71zm1.581 11.597H3.715V9.738h3.203v10.714zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/></svg>
+        LinkedIn
+      </a>
+      <a href="https://www.facebook.com/kampanaaaaaa" target="_blank" class="social-pill">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        Facebook
+      </a>
+      <a href="https://www.instagram.com/m.izabellee/?hl=en" target="_blank" class="social-pill">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        Instagram
+      </a>
+    </div>
+
+    <div class="contact-footer">
+      <p><strong>Ma. Izabelle Oja</strong></p>
+      <p class="contact-info-line">+63 995 057 4055 · Rizal, Philippines</p>
+    </div>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
